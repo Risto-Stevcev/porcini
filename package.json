@@ -1,0 +1,37 @@
+{
+  "name": "porcini",
+  "version": "0.0.1",
+  "description": "A very lightweight dom framework",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "prettier": {
+    "semi": false,
+    "singleQuote": true,
+    "trailingComma": "none",
+    "arrowParens": "avoid"
+  },
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "test": "mocha -r ts-node/register test/**/*.ts",
+    "test:e2e": "parcel serve example/index.html",
+    "test:watch": "mocha -r ts-node/register -w test/**/*.ts"
+  },
+  "author": "Risto Stevcev",
+  "license": "BSD-3-Clause",
+  "devDependencies": {
+    "@types/mocha": "^7.0.2",
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "mocha": "^7.1.1",
+    "parcel-bundler": "^1.12.4",
+    "prettier": "^2.0.2",
+    "ts-node": "^8.8.2",
+    "tslint": "^6.1.0",
+    "typescript": "^3.8.3"
+  },
+  "dependencies": {
+    "hyphae": "^0.0.2",
+    "morphdom": "^2.5.12"
+  }
+}
